@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RNS Performance | Project EK Timeline</title>
+  <link rel="stylesheet" href="car-build-timeline.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">RNS <span>Performance</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="new-arrivals.html">New Arrivals</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a class="active" href="car-build-timeline.html">The Build</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-build">
+      <div class="hero-copy">
+        <p class="eyebrow">The Build</p>
+        <h1>Project EK</h1>
+        <p>Every milestone. Every mod. Watch the car evolve as the timeline moves with you.</p>
+        <a class="cta" href="#timeline">Follow the journey</a>
+      </div>
+      <div class="hero-car" aria-hidden="true">
+        <div class="car-silhouette">EK</div>
+      </div>
+    </section>
+
+    <section id="timeline" class="build-section">
+      <aside class="road-timeline" aria-label="Build timeline progress">
+        <div class="road-track">
+          <div class="road-progress"></div>
+          <div class="toy-car" aria-hidden="true">
+            <svg viewBox="0 0 130 70" role="img">
+              <path class="car-body" d="M18 43 C22 27 36 22 50 20 L73 20 C89 20 103 29 111 43 L118 45 C123 46 126 50 126 55 L126 59 L4 59 L4 54 C4 49 8 45 18 43 Z"/>
+              <path class="car-window" d="M47 25 L72 25 C83 25 92 31 98 41 L33 41 C36 32 40 27 47 25 Z"/>
+              <circle class="wheel" cx="32" cy="59" r="10"/>
+              <circle class="wheel" cx="99" cy="59" r="10"/>
+              <circle class="wheel-core" cx="32" cy="59" r="4"/>
+              <circle class="wheel-core" cx="99" cy="59" r="4"/>
+            </svg>
+          </div>
+          <button class="stop active" style="--stop:0" data-stage="0"><span>Start</span></button>
+          <button class="stop" style="--stop:1" data-stage="1"><span>Wheels</span></button>
+          <button class="stop" style="--stop:2" data-stage="2"><span>Engine</span></button>
+          <button class="stop" style="--stop:3" data-stage="3"><span>Interior</span></button>
+          <button class="stop" style="--stop:4" data-stage="4"><span>Next</span></button>
+        </div>
+      </aside>
+
+      <div class="timeline-content">
+        <article class="stage active" data-stage="0">
+          <div class="stage-copy">
+            <span>March 2024</span>
+            <h2>The Beginning</h2>
+            <p>Picked up the EK hatch. Stock, raw, and full of potential. This is where the build story starts.</p>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=vtecshai" title="Project EK beginning video" allowfullscreen></iframe>
+            <div class="video-label">Build video 01</div>
+          </div>
+          <div class="blueprint"><span></span><b>Stock shell</b></div>
+        </article>
+
+        <article class="stage" data-stage="1">
+          <div class="stage-copy">
+            <span>April 2024</span>
+            <h2>First Upgrades</h2>
+            <p>Wheels, suspension, stance, and small details that start turning a normal car into a project car.</p>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=vtecshai" title="Project EK first upgrades video" allowfullscreen></iframe>
+            <div class="video-label">Build video 02</div>
+          </div>
+          <div class="blueprint"><span></span><b>Fitment</b></div>
+        </article>
+
+        <article class="stage" data-stage="2">
+          <div class="stage-copy">
+            <span>June 2024</span>
+            <h2>Engine Enhancements</h2>
+            <p>Intake, header, exhaust, bay cleanup, and performance work. The VTEC energy starts waking up.</p>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=vtecshai" title="Project EK engine video" allowfullscreen></iframe>
+            <div class="video-label">Build video 03</div>
+          </div>
+          <div class="blueprint"><span></span><b>K-series energy</b></div>
+        </article>
+
+        <article class="stage" data-stage="3">
+          <div class="stage-copy">
+            <span>August 2024</span>
+            <h2>Aesthetic Evolution</h2>
+            <p>Interior refresh, trim details, paint touch-ups, lighting, and the details that make the car feel complete.</p>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=vtecshai" title="Project EK aesthetic video" allowfullscreen></iframe>
+            <div class="video-label">Build video 04</div>
+          </div>
+          <div class="blueprint"><span></span><b>Interior / style</b></div>
+        </article>
+
+        <article class="stage" data-stage="4">
+          <div class="stage-copy">
+            <span>Coming Soon</span>
+            <h2>What's Next?</h2>
+            <p>More power, more merch, more story. Future stages can be unlocked as the build keeps moving.</p>
+          </div>
+          <div class="video-card locked">
+            <div class="locked-text">To be continued...</div>
+          </div>
+          <div class="blueprint mystery"><span></span><b>???</b></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="car-build-timeline.js"></script>
+</body>
+</html>
