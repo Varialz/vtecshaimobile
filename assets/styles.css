@@ -55,3 +55,153 @@ html{scroll-behavior:smooth;background:#09090B}body{min-width:0;-webkit-font-smo
   .trust{grid-template-columns:1fr 1fr;padding:0}.trust div{padding:14px 8px;font-size:12px}.trust small{font-family:Arial,sans-serif;font-size:11px}.products,.lookbook,.content-section,.directory,.social-feed{padding-left:18px!important;padding-right:18px!important}.head{align-items:flex-start;gap:10px;flex-direction:column}.head h2{font-size:26px}.grid,.catalog-grid{grid-template-columns:1fr!important;gap:18px}.catalog-card{border-radius:20px;padding:12px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(111,61,255,.10)),#0b0b12}.catalog-stage{height:370px;border-radius:18px}.catalog-stage img{object-fit:contain!important}.catalog-stage .shirt-rotator img{width:100%;height:100%;padding:0}.view-product{border-radius:12px;text-align:center}.access{display:grid;grid-template-columns:1fr;margin:22px 18px;padding:18px}.access h2{font-size:28px}.count b{font-size:28px}.lookgrid{grid-template-columns:1fr!important}.lookgrid img,.lookgrid div{height:220px}.social-grid{grid-template-columns:1fr}.dir-grid{grid-template-columns:1fr 1fr}.directory{display:none}.page-hero{min-height:250px;padding:42px 18px}.page-hero h1{font-size:clamp(40px,15vw,68px)}.catalog-controls{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.catalog-controls button{padding:12px 8px}.product-detail,.split,.contact-grid{grid-template-columns:1fr!important}.product-showcase .detail-stage{min-height:420px;border-radius:22px}.detail-stage .shirt-rotator img{width:96%;height:96%;object-fit:contain}.panel{padding:20px}.panel h2,.content-section h2{font-size:30px}.size-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.size-row span{text-align:center;padding:12px 6px}.cols{grid-template-columns:1fr!important}footer{padding:38px 18px}.collection-grid,.faq{grid-template-columns:1fr!important}
 }
 @media(max-width:390px){.catalog-stage{height:330px}.hero h1{font-size:42px}.shirt-purple{margin-left:-42%}.hero-shirt{width:72%!important}.arrival-badge strong{font-size:40px}.arrival-badge span{font-size:24px}}
+
+/* ==========================================================
+   PRODUCT GALLERY V2
+   Purple Product Page
+   ========================================================== */
+
+.product-gallery{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:24px;
+    align-items:center;
+}
+
+.product-thumbs{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.product-thumbs img{
+
+    width:90px;
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    border:2px solid rgba(255,255,255,.08);
+
+    background:#0d0d12;
+
+    transition:.25s;
+
+}
+
+.product-thumbs img:hover,
+.product-thumbs img.active{
+
+    border-color:#A98CFF;
+
+    box-shadow:
+        0 0 22px rgba(111,61,255,.75);
+
+    transform:scale(1.04);
+
+}
+
+.product-stage{
+
+    position:relative;
+
+    min-height:620px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(111,61,255,.22),
+    transparent 48%),
+    linear-gradient(
+        145deg,
+        #08080c,
+        #151223
+    );
+
+}
+
+.product-stage img{
+
+    position:absolute;
+
+    width:92%;
+
+    max-height:560px;
+
+    object-fit:contain;
+
+    opacity:0;
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+
+    filter:
+        drop-shadow(0 0 18px rgba(255,255,255,.45))
+        drop-shadow(0 0 55px rgba(111,61,255,.75));
+
+}
+
+.product-stage img.active{
+
+    opacity:1;
+
+}
+
+.product-stage img:hover{
+
+    transform:scale(1.03);
+
+}
+
+@media(max-width:900px){
+
+.product-gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.product-thumbs{
+
+flex-direction:row;
+
+justify-content:center;
+
+order:2;
+
+}
+
+.product-thumbs img{
+
+width:72px;
+height:72px;
+
+}
+
+.product-stage{
+
+min-height:420px;
+
+}
+
+.product-stage img{
+
+width:96%;
+
+}
+
+}
