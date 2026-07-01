@@ -1,82 +1,35 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RNS Performance Purple</title><link rel="stylesheet" href="assets/styles.css"></head><script src="assets/gallery.js"></script><body><div class="topbar"><span>‹</span><b>Free shipping on orders $75+</b><span>Built for enthusiasts. Driven by performance.</span><b>Worldwide shipping</b><span>›</span></div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RNS Performance Purple</title><link rel="stylesheet" href="assets/styles.css"></head><body><div class="topbar"><span>‹</span><b>Free shipping on orders $75+</b><span>Built for enthusiasts. Driven by performance.</span><b>Worldwide shipping</b><span>›</span></div>
 <header><a class="logo" href="index.html">RNS<span>+</span><small>PERFORMANCE</small></a><nav><a class="" href="index.html">Home</a><a class="nav-current" href="shop.html">Shop</a><a class="" href="new-arrivals.html">New Arrivals</a><a class="" href="collections.html">Collections</a><a class="" href="lookbook.html">Lookbook</a><a class="" href="contact.html">Contact</a></nav><div class="icons">⌕ ♙ 🛒</div></header>
 <section class="page-hero"><p class="kicker">Product page</p><h1>RNS Performance Purple</h1><p>Offline product page built for local browsing.</p></section>
 <section class="directory"><h2>Offline site directory</h2><div class="dir-grid"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="new-arrivals.html">New Arrivals</a><a href="collections.html">Collections</a><a href="lookbook.html">Lookbook</a><a href="contact.html">Contact</a></div></section>
-<section class="content-section product-detail product-showcase card-glow purple-product-page">
-  <div class="product-gallery purple-gallery" aria-label="RNS Performance Purple product gallery">
-    <div class="gallery-stage">
-  <span class="motion-ring"></span>
-  <span class="motion-bolt"></span>
+<section class="content-section product-detail product-showcase card-glow">
+  <div class="product-gallery-fixed auto-rotate">
+    <input type="radio" name="purple-gallery" id="purple-gallery-1" checked>
+    <input type="radio" name="purple-gallery" id="purple-gallery-2">
+    <input type="radio" name="purple-gallery" id="purple-gallery-3">
 
-  <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous image">‹</button>
+    <div class="product-gallery-main">
+      <span class="motion-ring"></span>
+      <label class="gallery-arrow arrow-left" for="purple-gallery-3" aria-label="Previous image">‹</label>
+      <label class="gallery-arrow arrow-right" for="purple-gallery-2" aria-label="Next image">›</label>
+      <div class="gallery-slide slide-1"><img src="assets/rns-shirt-purple-transparent.png" alt="RNS Performance Purple front shirt"></div>
+      <div class="gallery-slide slide-2"><img src="assets/purple-back-transparent.png" alt="RNS Performance Purple back shirt"></div>
+      <div class="gallery-slide slide-3"><img src="assets/IMG-4814.webp" alt="RNS Performance Purple product photo"></div>
+    </div>
 
-  <div class="gallery-slides">
-    <img class="gallery-slide contain-slide active" src="assets/purple-back-transparent.png" alt="Front of RNS Performance Purple tee">
-    <img class="gallery-slide contain-slide" src="assets/rns-shirt-vtec-transparent.png" alt="Back of RNS Performance Purple tee">
-    <img class="gallery-slide cover-slide" src="assets/Shai_Purple_Shirt.jpeg" alt="Shai wearing the RNS Performance Purple tee">
+    <div class="product-gallery-dots" aria-label="Gallery slide dots">
+      <label for="purple-gallery-1"></label>
+      <label for="purple-gallery-2"></label>
+      <label for="purple-gallery-3"></label>
+    </div>
+
+    <div class="product-gallery-thumbs">
+      <label for="purple-gallery-1"><img src="assets/rns-shirt-purple-transparent.png" alt="Front thumbnail"></label>
+      <label for="purple-gallery-2"><img src="assets/purple-back-transparent.png" alt="Back thumbnail"></label>
+      <label for="purple-gallery-3"><img src="assets/IMG-4814.webp" alt="Product thumbnail"></label>
+    </div>
   </div>
-
-  <button class="gallery-arrow gallery-next" type="button" aria-label="Next image">›</button>
-</div>
-    <div class="gallery-thumbs" aria-label="Gallery thumbnails">
-  <button class="thumb active" type="button" data-slide="0">
-    <img src="assets/rns-shirt-purple-transparent.png" alt="Front thumbnail">
-  </button>
-
-  <button class="thumb" type="button" data-slide="1">
-    <img src="assets/rns-shirt-vtec-transparent.png" alt="Back thumbnail">
-  </button>
-
-  <button class="thumb" type="button" data-slide="2">
-    <img src="assets/Shai_Purple_Shirt.jpeg" alt="Shai wearing shirt thumbnail">
-  </button>
-</div>
-    <div class="gallery-dots" aria-hidden="true"><span class="active"></span><span></span><span></span></div>
-  </div>
-  <div class="panel product-copy-panel">
-    <p class="kicker">Product page</p>
-    <h2>RNS Performance Purple</h2>
-    <p class="price">$25.99</p>
-    <p>Black and purple RNS graphic tee with aggressive car-culture energy. Swipe the gallery to view the back print, front logo, and product photo.</p>
-    <h3 class="size-title">Size</h3>
-    <div class="size-row"><span>S</span><span>M</span><span>L</span><span>XL</span><span>2XL</span></div>
-    <a class="btn" href="contact.html">Ask about this shirt</a><a class="btn ghost" href="shop.html">Back to catalog</a>
-  </div>
+  <div class="panel"><h2>RNS Performance Purple</h2><p>$25.99</p><p>Black and purple RNS graphic tee with aggressive car-culture energy.</p><div class="size-row"><span>S</span><span>M</span><span>L</span><span>XL</span><span>2XL</span></div><a class="btn" href="contact.html">Ask about this shirt</a><a class="btn ghost" href="shop.html">Back to catalog</a></div>
 </section>
-<script>
-(function(){
-  const root=document.querySelector('.purple-product-page');
-  if(!root) return;
-  const slides=[...root.querySelectorAll('.gallery-slide')];
-  const thumbs=[...root.querySelectorAll('.thumb')];
-  const dots=[...root.querySelectorAll('.gallery-dots span')];
-  const stage=root.querySelector('.gallery-stage');
-  const prev=root.querySelector('.gallery-prev');
-  const next=root.querySelector('.gallery-next');
-  if(!slides.length) return;
-  let current=0;
-  let timer;
-  function show(index){
-    current=(index+slides.length)%slides.length;
-    slides.forEach((slide,i)=>slide.classList.toggle('active',i===current));
-    thumbs.forEach((thumb,i)=>thumb.classList.toggle('active',i===current));
-    dots.forEach((dot,i)=>dot.classList.toggle('active',i===current));
-  }
-  function restart(){
-    clearInterval(timer);
-    timer=setInterval(()=>show(current+1),3500);
-  }
-  thumbs.forEach((thumb,i)=>thumb.addEventListener('click',()=>{show(i);restart();}));
-  prev.addEventListener('click',()=>{show(current-1);restart();});
-  next.addEventListener('click',()=>{show(current+1);restart();});
-  let startX=0;
-  stage.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;},{passive:true});
-  stage.addEventListener('touchend',e=>{
-    const endX=e.changedTouches[0].clientX;
-    if(Math.abs(endX-startX)>40){show(current+(endX<startX?1:-1));restart();}
-  },{passive:true});
-  restart();
-})();
-</script>
-<footer><a class="logo" href="index.html">RNS<span>+</span><small>PERFORMANCE</small></a><p>Premium streetwear inspired by car culture.</p><div class="cols"><p><b>Shop</b><br><a class="footer-link" href="shop.html">All Products</a><br><a class="footer-link" href="new-arrivals.html">New Arrivals</a><br><a class="footer-link" href="collections.html">VTEC Collection</a></p><p><b>Customer Care</b><br>Shipping<br>Returns<br>FAQ</p><p><b>Company</b><br><a class="footer-link" href="lookbook.html">Lookbook</a><br><a class="footer-link" href="contact.html">Contact</a></p><p><b>Newsletter</b><br>Get updates on new drops.<br><input placeholder="Email"><button>Subscribe</button></p></div></footer>
-</body></html>
+<section class="trust"><div>⚙ <b>Premium quality</b><small>Top tier materials</small></div><div>🚚 <b>Worldwide shipping</b><small>Fast & reliable delivery</small></div><div>🔒 <b>Secure checkout</b><small>Safe & encrypted</small></div><div>↻ <b>Easy returns</b><small>Hassle free returns</small></div><div>◎ <b>Support 24/7</b><small>We're here to help</small></div></section>
+<footer><a class="logo" href="index.html">RNS<span>+</span><small>PERFORMANCE</small></a><p>Premium streetwear inspired by car culture.</p><div class="cols"><p><b>Shop</b><br><a class="footer-link" href="shop.html">All Products</a><br><a class="footer-link" href="new-arrivals.html">New Arrivals</a><br><a class="footer-link" href="collections.html">VTEC Collection</a></p><p><b>Customer Care</b><br>Shipping<br>Returns<br>FAQ</p><p><b>Company</b><br><a class="footer-link" href="lookbook.html">Lookbook</a><br><a class="footer-link" href="contact.html">Contact</a></p><p><b>Newsletter</b><br>Get updates on new drops.<br><input placeholder="Email"><button>Subscribe</button></p></div></footer></body></html>
