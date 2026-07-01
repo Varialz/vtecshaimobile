@@ -16,7 +16,7 @@
     loader.innerHTML = `
       <div class="rns-loader-card">
         <div class="rns-loader-glow" aria-hidden="true"></div>
-        <img class="loader-dog rns-loader-dog" src="${LOADER_IMAGE_SRC}" alt="RNS loading dog" decoding="async">
+        <img class="loader-dog rns-loader-dog" src="${assets/rns-dog-loader.png}" alt="RNS loading dog" decoding="async">
         <div class="rns-loader-text">Loading<span class="rns-loader-dots"></span></div>
       </div>
     `;
