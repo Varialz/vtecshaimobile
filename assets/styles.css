@@ -205,3 +205,230 @@ width:96%;
 }
 
 }
+
+/* ==========================================
+   PRODUCT GALLERY
+   ========================================== */
+
+.purple-gallery{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:24px;
+    align-items:center;
+}
+
+.gallery-stage{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    min-height:620px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(111,61,255,.25),
+    transparent 45%),
+    #09090B;
+
+}
+
+.gallery-slides{
+
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+
+.gallery-slide{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    opacity:0;
+
+    transform:scale(.96);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+
+}
+
+.gallery-slide.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+.gallery-thumbs{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.gallery-thumbs button{
+
+    padding:0;
+
+    background:none;
+
+    border:none;
+
+}
+
+.gallery-thumbs img{
+
+    width:84px;
+
+    height:84px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:2px solid rgba(255,255,255,.08);
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.thumb.active img,
+.gallery-thumbs img:hover{
+
+    border-color:#A98CFF;
+
+    box-shadow:0 0 18px rgba(111,61,255,.8);
+
+    transform:scale(1.05);
+
+}
+
+.gallery-arrow{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:rgba(0,0,0,.45);
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    z-index:10;
+
+}
+
+.gallery-prev{
+
+    left:18px;
+
+}
+
+.gallery-next{
+
+    right:18px;
+
+}
+
+.gallery-dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:18px;
+
+}
+
+.gallery-dots span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#555;
+
+}
+
+.gallery-dots span.active{
+
+    background:#A98CFF;
+
+    box-shadow:0 0 10px #A98CFF;
+
+}
+
+@media(max-width:900px){
+
+.purple-gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-thumbs{
+
+flex-direction:row;
+
+justify-content:center;
+
+order:2;
+
+}
+
+.gallery-stage{
+
+min-height:430px;
+
+}
+
+.gallery-thumbs img{
+
+width:72px;
+
+height:72px;
+
+}
+
+}
