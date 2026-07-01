@@ -243,9 +243,19 @@ width:96%;
 
 .gallery-slides{
 
-    width:100%;
-    height:100%;
     position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    min-height:600px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
 }
 
@@ -253,20 +263,23 @@ width:96%;
 
     position:absolute;
 
-    inset:0;
+    left:0;
+    top:0;
 
     width:100%;
     height:100%;
 
-    object-fit:contain;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     opacity:0;
 
-    transform:scale(.96);
+    pointer-events:none;
 
-    transition:
-        opacity .45s ease,
-        transform .45s ease;
+    transition:.45s;
 
 }
 
@@ -274,7 +287,9 @@ width:96%;
 
     opacity:1;
 
-    transform:scale(1);
+    pointer-events:auto;
+
+    z-index:2;
 
 }
 
@@ -419,7 +434,19 @@ order:2;
 
 .gallery-stage{
 
-min-height:430px;
+    position:relative;
+
+    width:100%;
+
+    min-height:650px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
 }
 
